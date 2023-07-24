@@ -5,4 +5,91 @@ box-sizing: content-box;
 }
 body{
   font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+:root{
+  --lightblue:#B4D0E7;
+  --black:#000000;
+  --butonblue:#0061FF;
+}
+.p-fixed{
+  position: fixed;
+  width: 100%;
+}
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position:absolute
+}
+.d-flex{
+  display: flex;
+}
+.f-wrap{
+  flex-wrap: wrap;
+}
+.s-between{
+  justify-content: space-between;
+}
+.j-center{
+  justify-content: center;
+}
+.j-right{
+ justify-content: right;
+}
+.j-left{
+  justify-content: left;
+}
+.a-center{
+  align-items: center;
+}
+.a-right{
+  align-items: right;
+}
+ul, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.debug{
+  background-color: rgba(255, 0, 0, .2);
+  border: 1px solid black;
+}
+.btn{
+  padding: 3px 5px;
+}
+/* header */
+header .container{
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+header .container .logo{
+  padding: 0px 10px;
+}
+header .container .menu li{
+  height: 100%;
+  padding: 14px 5px;
+  border-bottom: 2px solid white;
+}
+header .menu li:hover{
+  border-bottom: 2px solid black;
+}
+.menu.principale{
+  left: 145px;
+}
+.menu.secondario{
+  right: 120px;
+}
+.accedi{
+  right: 7px;
+}
+.accedi .inizia{
+ background-color: var(--butonblue);
+ color: white;
+}
+.accedi .inizia a{
+  color: white;
 }
