@@ -12,6 +12,9 @@ body{
   --black:#000000;
   --butonblue:#0061FF;
 }
+h1{
+  font-size: 3.2rem
+}
 .p-fixed{
   position: fixed;
   width: 100%;
@@ -65,6 +68,7 @@ header .container{
   width: 100%;
   height: 50px;
   background-color: white;
+  z-index: 999;
 }
 header .container .logo{
   padding: 0px 10px;
@@ -76,6 +80,7 @@ header .container .menu li{
 }
 header .menu li:hover{
   border-bottom: 2px solid black;
+  cursor: pointer;
 }
 .menu.principale{
   left: 145px;
@@ -86,10 +91,45 @@ header .menu li:hover{
 .accedi{
   right: 7px;
 }
-.accedi .inizia{
+.btn-blu{
  background-color: var(--butonblue);
- color: white;
 }
-.accedi .inizia a{
+.btn-blu:hover{
+  cursor: pointer;
+}
+.white{
   color: white;
+}
+.bold{
+  font-weight: bold;
+}
+/* main */
+
+/* footer */
+footer{
+  width: 100%; 
+  background-color: #000000;
+}
+footer .container{
+  width: 90%;
+  max-width: 1300px;
+  min-width: 830;
+  height: 100%;
+}
+.top{
+  margin:40px auto 50px;
+  width: 100%;
+}
+.row{
+  width: calc(100% / 5);
+  min-width: 170px;
+}
+.row li{
+  padding-bottom: 20px
+}
+.bot{
+  border-top: 1px solid #999999;
+  color: #999999;
+  padding: 40px 0px;
+  width: 110px;
 }
