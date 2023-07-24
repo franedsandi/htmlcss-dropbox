@@ -52,6 +52,9 @@ h1{
 ul, li{
   list-style: none;
 }
+.d-column{
+  flex-direction: column;
+}
 a{
   text-decoration: none;
   color: black;
@@ -69,6 +72,7 @@ header .container{
   height: 50px;
   background-color: white;
   z-index: 999;
+  min-width: 830px;
 }
 header .container .logo{
   padding: 0px 10px;
@@ -104,7 +108,42 @@ header .menu li:hover{
   font-weight: bold;
 }
 /* main */
-
+main{
+  padding-top: 50px;
+}
+.bg-jumbo{
+  background-color:#B4D0E7;
+}
+.bg-jumbo .container{
+  margin: 0px auto;
+  padding-top: 50px;
+  width: 90%;
+  max-width: 1200px;
+  min-width: 830px;
+}
+.informacion{
+  padding-top: 50px;
+  margin-bottom:-5%
+}
+.texto{
+  width: 30%;
+}
+.img-jumbo{
+  width: 70%;
+}
+.img-jumbo img{
+  width: 100%;
+}
+.prova{
+  margin: 20px 0px;
+  width: 190px;
+  text-align: center;
+}
+.arrow{
+  left:0;
+  bottom:15%;
+  font-size: 40px;
+}
 /* footer */
 footer{
   width: 100%; 
@@ -112,12 +151,12 @@ footer{
 }
 footer .container{
   width: 90%;
-  max-width: 1300px;
+  max-width: 1500px;
   min-width: 830;
   height: 100%;
 }
 .top{
-  margin:40px auto 50px;
+  margin:40px 0px 50px;
   width: 100%;
 }
 .row{
