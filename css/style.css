@@ -66,7 +66,22 @@ a{
 .btn{
   padding: 3px 5px;
 }
+.btn-blu{
+  background-color: var(--butonblue);
+}
+.btn-blu:hover{
+   cursor: pointer;
+ }
+.white{
+   color: white;
+}
+.bold{
+   font-weight: bold;
+}
 /* header */
+header{
+  border-bottom: 1px solid lightgray;
+}
 header .container{
   width: 100%;
   height: 50px;
@@ -86,64 +101,73 @@ header .menu li:hover{
   border-bottom: 2px solid black;
   cursor: pointer;
 }
-.menu.principale{
+header .menu.principale{
   left: 145px;
 }
-.menu.secondario{
+header .menu.secondario{
   right: 120px;
 }
-.accedi{
+header .accedi{
   right: 7px;
-}
-.btn-blu{
- background-color: var(--butonblue);
-}
-.btn-blu:hover{
-  cursor: pointer;
-}
-.white{
-  color: white;
-}
-.bold{
-  font-weight: bold;
 }
 /* main */
 main{
   padding-top: 50px;
 }
-.bg-jumbo{
+  /* jumbotron */
+  .bg-jumbo{
   background-color:#B4D0E7;
-}
-.bg-jumbo .container{
+  }
+  .bg-jumbo .container{
   margin: 0px auto;
   padding-top: 50px;
   width: 90%;
   max-width: 1200px;
   min-width: 830px;
-}
-.informacion{
+  }
+  .bg-jumbo .container .informacion{
   padding-top: 50px;
   margin-bottom:-5%
-}
-.texto{
+  }
+  .bg-jumbo .container .informacion .texto{
   width: 30%;
-}
-.img-jumbo{
+  }
+  .bg-jumbo .container .informacion .img-jumbo{
   width: 70%;
-}
-.img-jumbo img{
+  }
+  .bg-jumbo .container .informacion .img-jumbo img{
   width: 100%;
-}
-.prova{
+  }
+  .bg-jumbo .container .informacion .texto .prova{
   margin: 20px 0px;
   width: 190px;
   text-align: center;
-}
-.arrow{
+  }
+  .bg-jumbo .container .informacion .texto .arrow{
   left:0;
   bottom:15%;
   font-size: 40px;
-}
+  }
+  /* info-costi */
+  .info-costi{
+    padding-top: 100px;
+    width: 100%;
+    background-color: white;
+
+  }
+  .info-costi .container{
+    width: 75%;
+  }
+  .info-costi .container h2{
+    margin-bottom: 40px;
+  }
+  .info-costi .container .fatturazione .mensile{
+    margin-right: 40px;
+  }
+  .info-costi .container .fatturazione{
+    margin-bottom: 30px;
+  }
+    /* cards */
 /* footer */
 footer{
   width: 100%; 
@@ -155,18 +179,18 @@ footer .container{
   min-width: 830;
   height: 100%;
 }
-.top{
-  margin:40px 0px 50px;
+footer .container .top{
+  padding:40px 0px 50px;
   width: 100%;
 }
-.row{
+footer .container .top .row{
   width: calc(100% / 5);
   min-width: 170px;
 }
-.row li{
+footer .container .top .row li{
   padding-bottom: 20px
 }
-.bot{
+footer .container .bot{
   border-top: 1px solid #999999;
   color: #999999;
   padding: 40px 0px;
