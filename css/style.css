@@ -1,7 +1,7 @@
 *{
 margin: 0;
 padding: 0;
-box-sizing: content-box;
+box-sizing: border-box;
 }
 body{
   font-family: 'Open Sans', sans-serif;
@@ -364,7 +364,12 @@ main{
   }
   .square {
     width:calc(100% / 2);
-    height:calc(100vw /6)
+    height:calc(100vw /6);
+    border: 7px solid rgba(255, 255, 255, 0);
+ 
+  }
+  .square:hover{
+    border:7px solid rgba(255, 255, 255, 0.377)
   }
   .big-square {
     width:100%;
@@ -389,7 +394,7 @@ main{
   }
   /* background colors */
   .bg-green{
-    background-color: #A2D39B ;
+    background-color: #A2D39B;
   }
   .bg-viola{
     background-color: #61082B;
