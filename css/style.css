@@ -49,6 +49,9 @@ h1{
 .a-right{
   align-items: right;
 }
+.ac-start{
+  align-content: flex-start;
+}
 ul, li{
   list-style: none;
 }
@@ -299,7 +302,7 @@ main{
   .partner .img{
     width: calc(200% / 3);
   }
-  .img img{
+  .partner .img img{
     width: 100%;
   }
   .partner .text{
@@ -311,15 +314,106 @@ main{
     margin: 15px 0px;
     display: block;
   }
-  .vuoto a{
+  .btn.vuoto a{
     text-decoration: none;
     color: black;
   }
-  .vuoto{
+  .btn.vuoto{
     border: 1px solid black;
     width: 120px;
     text-align: center;
   }
+  /* altre info */
+  .altre-info{
+    margin: 0 auto;
+    width: 75%;
+  }
+  .second-card{
+    width: 30%;
+    margin: 30px 0px 10px;
+    border-radius: 5px;
+    min-width: 220px;
+  }
+  .second-card:hover{
+    box-shadow: 0px 0px 5px ;
+  }
+  .second-card img{
+    width: 100%;
+  }
+  .second-card p{
+    font-size: 12px;
+    margin: 10px 0px;
+  }
+  /* sottotitolo */
+  .sottotitolo{
+    margin: 70px auto;
+    width: 75%;
+  }
+  .sottotitolo h2{
+    margin-bottom: 15px;
+  }
+  /* brands */
+  .brands{
+    width: 100%;
+  }
+  .brands .row{
+    width: calc(100% / 3);
+  }
+  .square {
+    width:calc(100% / 2);
+    height:calc(100vw /6)
+  }
+  .big-square {
+    width:100%;
+    height:calc(((100vw / 6)*2)-40px);
+    padding: 27px;
+    font-size: 8px;
+  }
+  .big-square img{
+    width: 50%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+  }
+  .big-square p{
+    margin: 20px auto;
+  }
+  .brand{
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: invert(1);
+  }
+  /* background colors */
+  .bg-green{
+    background-color: #A2D39B ;
+  }
+  .bg-viola{
+    background-color: #61082B;
+  }
+  .bg-blu{
+    background-color: #0093CE;
+  }
+  .bg-lightred{
+    background-color: #FF1C1C;
+  }
+  .bg-red{
+    background-color: #D5001F;
+  }
+  .bg-lightblue{
+    background-color: #B4D0E7;
+  }
+  .bg-azzurro{
+    background-color: #0D2481;
+  }
+  .bg-giallo{
+    background-color: #FFD830;
+  }
+  .bg-lightgrey{
+    background-color: #F5F5F5;
+  }
+/* portare */
+
 /* footer */
 footer{
   width: 100%; 
