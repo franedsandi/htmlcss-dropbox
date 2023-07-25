@@ -433,7 +433,31 @@ main{
   height:calc(100vw /6);
   background-color: #B4D0E7;
 }
-
+/* domande */
+.domande .container{
+  width: 75%;
+  margin: 50px auto;
+}
+.domande .container h2{
+  padding: 30px 0px;
+  border-bottom: 1px solid gray;
+}
+.question {
+  margin: 50px 0px;
+}
+.question span{
+  padding-right: 50px;
+}
+.pregunta{
+  border-bottom: 1px solid grey;
+}
+.pregunta .answer{
+  display:none;
+  margin-bottom: 30px;
+}
+.pregunta:hover .answer{
+  display: block;
+}
 /* footer */
 footer{
   width: 100%; 
