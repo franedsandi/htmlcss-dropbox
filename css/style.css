@@ -65,7 +65,7 @@ ul, li{
 .btn-blu{
   background-color: var(--butonblue);
 }
-.btn-blu:hover{
+.btn:hover{
    cursor: pointer;
  }
 .white{
@@ -290,7 +290,35 @@ main{
   }
   .big .contatta a{
     text-decoration: none;
-
+  }
+  /* Partner */
+  .partner{
+    margin: 90px auto 90px;
+    width: 75%;
+  }
+  .partner .img{
+    width: calc(200% / 3);
+  }
+  .img img{
+    width: 100%;
+  }
+  .partner .text{
+    width: calc( 100% / 3);
+    padding: 30px;
+  }
+  .text .info{
+    font-size: 12px;
+    margin: 15px 0px;
+    display: block;
+  }
+  .vuoto a{
+    text-decoration: none;
+    color: black;
+  }
+  .vuoto{
+    border: 1px solid black;
+    width: 120px;
+    text-align: center;
   }
 /* footer */
 footer{
