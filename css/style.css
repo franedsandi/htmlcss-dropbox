@@ -319,9 +319,12 @@ main{
     color: black;
   }
   .btn.vuoto{
-    border: 1px solid black;
-    width: 120px;
+    padding: 5px;
     text-align: center;
+    background-color: #ffffff;
+  }
+  .btn.border{
+    border: 1px solid black;
   }
   /* altre info */
   .altre-info{
@@ -413,6 +416,15 @@ main{
     background-color: #F5F5F5;
   }
 /* portare */
+.portare {
+  background-color:  #B4D0E7;
+}
+.portare .container{
+  width: 75%;
+  margin: 0 auto;
+  height:calc(100vw /6);
+  background-color: #B4D0E7;
+}
 
 /* footer */
 footer{
