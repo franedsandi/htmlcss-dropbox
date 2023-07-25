@@ -55,10 +55,6 @@ ul, li{
 .d-column{
   flex-direction: column;
 }
-a{
-  text-decoration: none;
-  color: black;
-}
 .debug{
   background-color: rgba(255, 0, 0, .2);
   border: 1px solid black;
@@ -110,6 +106,10 @@ header .menu.secondario{
 header .accedi{
   right: 7px;
 }
+header a{
+  text-decoration: none;
+  color: black;
+}
 /* main */
 main{
   padding-top: 50px;
@@ -148,6 +148,12 @@ main{
   bottom:15%;
   font-size: 40px;
   }
+  .bg-jumbo a{
+    text-decoration: none;
+  }
+  .bg-jumbo a.arrow{
+    color: #000000;
+  }
   /* info-costi */
   .info-costi{
     padding-top: 100px;
@@ -167,7 +173,125 @@ main{
   .info-costi .container .fatturazione{
     margin-bottom: 30px;
   }
-    /* cards */
+  /* cards */
+  .small{
+    width: 30%;
+    min-width: 200px;
+  }
+  .card{
+    border: 1px solid #d0d0d3;
+  }
+
+  .card h3{
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #d0d0d3 ;
+    padding: 5px 0px;
+    font-size: 10px;
+  }
+  .internal-info{
+    margin: 15px;
+  }    
+  .internal-info span{
+    display: block;
+  }
+  .type{
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .price{
+    font-size: 12px;
+    padding-bottom: 7px;
+    font-weight: bold;
+  }
+  .periodo{
+    color: #6a6a6a;
+    font-size: 10px;
+    padding-bottom: 30px;
+  }
+  .internal-info li{
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+  .internal-info ul li:last-child{ 
+    padding-bottom: 30px;
+  }
+  .internal-info .prova{
+    font-size: 12px;
+    text-align: center;
+  }
+  .acquista{
+    padding: 30px 0px 30px;
+    font-size: 12px;
+  }
+  .divider{
+    border-bottom: 1px solid #d0d0d3;
+    width: 50px;
+    color: white;
+    font-size: 1px;
+    margin-bottom: 30px;
+  }
+  .punti{
+    font-weight: bold;
+    margin-bottom: 15px;
+    }
+  main ul {
+    --icon-space: 1.3em;
+    list-style: none;
+    padding: 0;
+  }
+  main li {
+    padding-left: var(--icon-space);
+  }
+  main li:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+  }
+  .piano li:before {
+    content: "\f00c";
+    color: blue;
+
+  }
+  .user li:before {
+    content: "\f007";
+  }
+  .folder li:before {
+    content: "\f07b"
+  }
+  .share li:before {
+    content: "\f1e0";
+  }
+  .prova a{
+    text-decoration: none;
+  }
+  .share{
+    padding-bottom: 20px;
+  }
+  /* big-card */
+  .big{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .big .price{
+    margin-bottom: 30px;
+  }
+  .internal-info .text{
+    width: 70%;
+  }
+  .big .contatta {
+    width: 25%;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    padding: 7px;
+  }
+  .big .contatta a{
+    text-decoration: none;
+
+  }
 /* footer */
 footer{
   width: 100%; 
