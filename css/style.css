@@ -1,3 +1,4 @@
+/* general */
 *{
 margin: 0;
 padding: 0;
@@ -13,72 +14,126 @@ body{
   --butonblue:#0061FF;
 }
 h1{
-  font-size: 3.2rem
+  font-size: 55px
 }
-.p-fixed{
-  position: fixed;
-  width: 100%;
-}
-.p-relative {
-  position: relative;
-}
-.p-absolute {
-  position:absolute
-}
-.d-flex{
-  display: flex;
-}
-.f-wrap{
-  flex-wrap: wrap;
-}
-.s-between{
-  justify-content: space-between;
-}
-.j-center{
-  justify-content: center;
-}
-.j-right{
- justify-content: right;
-}
-.j-left{
-  justify-content: left;
-}
-.a-center{
-  align-items: center;
-}
-.a-right{
-  align-items: right;
-}
-.ac-start{
-  align-content: flex-start;
-}
-ul, li{
-  list-style: none;
-}
-.d-column{
-  flex-direction: column;
+h2{
+  font-size: 30px;
 }
 .debug{
   background-color: rgba(255, 0, 0, .2);
   border: 1px solid black;
 }
-.btn{
-  padding: 3px 5px;
-}
-.btn-blu{
-  background-color: var(--butonblue);
-}
-.btn:hover{
-   cursor: pointer;
- }
-.btn:active{
-  box-shadow: 0 0 5px grey;
-}
-.white{
-   color: white;
-}
-.bold{
-   font-weight: bold;
+/* basic style */
+  /* list style */
+  ul, li{
+    list-style: none;
+  }
+  ul {
+    --icon-space: 1.3em;
+    padding: 0;
+  }
+  li {
+    padding-left: var(--icon-space);
+  }
+  li:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+  }
+  /* links */
+  a{
+    text-decoration: none;
+  }
+  .black{
+    color: black;
+  }
+  .white{
+    color: white;
+  }
+  /* positions */
+  .p-fixed{
+    position: fixed;
+    width: 100%;
+  }
+  .p-relative {
+    position: relative;
+  }
+  .p-absolute {
+    position:absolute
+  }
+  /* display flex */
+  .d-flex{
+    display: flex;
+  }
+  .f-wrap{
+    flex-wrap: wrap;
+  }
+  .s-between{
+    justify-content: space-between;
+  }
+  .j-center{
+    justify-content: center;
+  }
+  .j-right{
+    justify-content: right;
+  }
+  .j-left{
+    justify-content: left;
+  }
+  .a-center{
+    align-items: center;
+  }
+  .a-right{
+    align-items: right;
+  }
+  .ac-start{
+    align-content: flex-start;
+  }
+  .d-column{
+    flex-direction: column;
+  }
+  /* butons */
+  .btn{
+    padding: 3px 5px;
+    display: black;
+  }
+  .btn.blu{
+    background-color: var(--butonblue);
+  }
+  .btn:hover{
+    cursor: pointer;
+  }
+  .btn:active{
+    box-shadow: 0 0 5px grey;
+  }
+  /* background colors */
+  .bg-green{
+    background-color: #A2D39B;
+  }
+  .bg-viola{
+    background-color: #61082B;
+  }
+  .bg-blu{
+    background-color: #0093CE;
+  }
+  .bg-lightred{
+    background-color: #FF1C1C;
+  }
+  .bg-red{
+    background-color: #D5001F;
+  }
+  .bg-lightblue{
+    background-color: #B4D0E7;
+  }
+  .bg-azzurro{
+    background-color: #0D2481;
+  }
+  .bg-giallo{
+    background-color: #FFD830;
+  }
+  .bg-lightgrey{
+    background-color: #F5F5F5;
 }
 /* header */
 header{
@@ -112,67 +167,58 @@ header .menu.secondario{
 header .accedi{
   right: 7px;
 }
-header a{
-  text-decoration: none;
-  color: black;
-}
 /* main */
 main{
   padding-top: 50px;
 }
+/* containers 75% */
+#info-costi .container,
+.partner
+{
+  width: 75%;
+}
+.divider{
+  border-bottom: 1px solid #d0d0d3;
+  width: 50px;
+  color: white;
+  margin-bottom: 30px;
+}
   /* jumbotron */
   .bg-jumbo{
-  background-color:#B4D0E7;
+    background-color:#B4D0E7;
   }
   .bg-jumbo .container{
-  margin: 0px auto;
-  padding-top: 50px;
-  width: 90%;
-  max-width: 1200px;
-  min-width: 830px;
+    margin: 0px auto 70px;
+    padding-top: 50px;
+    width: 90%;
+    max-width: 1200px;
+    min-width: 830px;
   }
   .bg-jumbo .container .informacion{
-  padding-top: 50px;
-  margin-bottom:-5%
+    padding-top: 50px;
+    margin-bottom:-5%
   }
   .bg-jumbo .container .informacion .texto{
-  width: 30%;
+    width: 30%;
   }
   .bg-jumbo .container .informacion .img-jumbo{
-  width: 70%;
+    width: 70%;
+    object-fit: contain;
   }
   .bg-jumbo .container .informacion .img-jumbo img{
-  width: 100%;
+    width: 100%;
   }
   .bg-jumbo .container .informacion .texto .prova{
-  margin: 20px 0px;
-  width: 190px;
-  text-align: center;
+    margin: 20px 0px;
+    width: 190px;
+    text-align: center;
   }
   .bg-jumbo .container .informacion .texto .arrow{
-  left:0;
-  bottom:15%;
-  font-size: 40px;
-  }
-  .bg-jumbo a{
-    text-decoration: none;
-  }
-  .bg-jumbo a.arrow{
-    color: #000000;
+    left:0;
+    bottom:15%;
+    font-size: 40px;
   }
   /* info-costi */
-  #info-costi{
-    padding-top: 100px;
-    width: 100%;
-    background-color: white;
-
-  }
-  #info-costi .container{
-    width: 75%;
-  }
-  #info-costi .container h2{
-    margin-bottom: 40px;
-  }
   #info-costi .container .fatturazione .mensile{
     margin-right: 40px;
   }
@@ -193,7 +239,7 @@ main{
     width: 100%;
     border-bottom: 1px solid #d0d0d3 ;
     padding: 5px 0px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .internal-info{
     margin: 15px;
@@ -217,49 +263,24 @@ main{
     padding-bottom: 30px;
   }
   .internal-info li{
-    font-size: 12px;
     padding-bottom: 15px;
   }
   .internal-info ul li:last-child{ 
     padding-bottom: 30px;
   }
   .internal-info .prova{
-    font-size: 12px;
     text-align: center;
   }
   .acquista{
     padding: 30px 0px 30px;
-    font-size: 12px;
-  }
-  .divider{
-    border-bottom: 1px solid #d0d0d3;
-    width: 50px;
-    color: white;
-    font-size: 1px;
-    margin-bottom: 30px;
   }
   .punti{
     font-weight: bold;
     margin-bottom: 15px;
     }
-  main ul {
-    --icon-space: 1.3em;
-    list-style: none;
-    padding: 0;
-  }
-  main li {
-    padding-left: var(--icon-space);
-  }
-  main li:before {
-    font-family: FontAwesome;
-    display: inline-block;
-    margin-left: calc( var(--icon-space) * -1 );
-    width: var(--icon-space);
-  }
   .piano li:before {
     content: "\f00c";
     color: blue;
-
   }
   .user li:before {
     content: "\f007";
@@ -269,12 +290,6 @@ main{
   }
   .share li:before {
     content: "\f1e0";
-  }
-  .prova a{
-    text-decoration: none;
-  }
-  .share{
-    padding-bottom: 20px;
   }
   /* big-card */
   .big{
@@ -288,19 +303,15 @@ main{
     width: 70%;
   }
   .big .contatta {
-    width: 25%;
+    width: 30%;
     top: 0px;
     right: 0px;
     text-align: center;
     padding: 7px;
   }
-  .big .contatta a{
-    text-decoration: none;
-  }
   /* Partner */
   .partner{
-    margin: 90px auto 90px;
-    width: 75%;
+    margin: 90px auto;
   }
   .partner .img{
     width: calc(200% / 3);
@@ -313,13 +324,8 @@ main{
     padding: 30px;
   }
   .text .info{
-    font-size: 12px;
     margin: 15px 0px;
     display: block;
-  }
-  .btn.vuoto a{
-    text-decoration: none;
-    color: black;
   }
   .btn.vuoto{
     padding: 5px;
@@ -347,7 +353,6 @@ main{
     width: 100%;
   }
   .second-card p{
-    font-size: 12px;
     margin: 10px 0px;
   }
   /* sottotitolo */
@@ -369,21 +374,20 @@ main{
     width:calc(100% / 2);
     height:calc(100vw /6);
     border: 1.5vw solid rgba(255, 255, 255, 0);
- 
   }
   .square:hover{
     border: 1.5vw solid rgba(255, 255, 255, 0.377)
   }
   .big-square {
     width:100%;
-    height:calc(((100vw / 6)*2)-40px);
+    height:calc(100vw / 3);
     padding: 27px;
-    font-size: 8px;
+    overflow-y: scroll;
   }
   .big-square img{
     width: 50%;
     padding-bottom: 30px;
-    border-bottom: 1px solid lightgray;
+  
   }
   .big-square p{
     margin: 20px auto;
@@ -394,34 +398,6 @@ main{
     left: 50%;
     transform: translate(-50%,-50%);
     filter: invert(1);
-  }
-  /* background colors */
-  .bg-green{
-    background-color: #A2D39B;
-  }
-  .bg-viola{
-    background-color: #61082B;
-  }
-  .bg-blu{
-    background-color: #0093CE;
-  }
-  .bg-lightred{
-    background-color: #FF1C1C;
-  }
-  .bg-red{
-    background-color: #D5001F;
-  }
-  .bg-lightblue{
-    background-color: #B4D0E7;
-  }
-  .bg-azzurro{
-    background-color: #0D2481;
-  }
-  .bg-giallo{
-    background-color: #FFD830;
-  }
-  .bg-lightgrey{
-    background-color: #F5F5F5;
   }
 /* portare */
 .portare {
@@ -437,6 +413,7 @@ main{
 .domande .container{
   width: 75%;
   margin: 50px auto;
+  scroll-behavior: smooth;
 }
 .domande .container h2{
   padding: 30px 0px;
