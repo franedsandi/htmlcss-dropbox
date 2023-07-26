@@ -191,8 +191,6 @@ main{
     margin: 0px auto 70px;
     padding-top: 50px;
     width: 90%;
-    max-width: 1200px;
-    min-width: 830px;
   }
   .bg-jumbo .container .informacion{
     padding-top: 50px;
@@ -377,15 +375,15 @@ main{
     height:calc(100vw /6);
     border: 1.5vw solid rgba(255, 255, 255, 0);
   }
-  .square:active{
+  .square:active,
+  .square.active{
     border: 1.5vw solid rgba(255, 255, 255, 0.377);
-    display:block
   }
   .big-square {
     width:100%;
     height:calc(100vw / 3);
     padding: 27px;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .big-square img{
     width: 50%;
