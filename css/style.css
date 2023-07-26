@@ -341,16 +341,18 @@ main{
     width: 75%;
   }
   .second-card{
-    width: 30%;
+    width: calc( 100% / 3 );
     margin: 30px 0px 10px;
     border-radius: 5px;
     min-width: 220px;
+    padding: 20px;
   }
   .second-card:hover{
     box-shadow: 0px 0px 5px ;
   }
   .second-card img{
     width: 100%;
+    object-fit: contain;
   }
   .second-card p{
     margin: 10px 0px;
@@ -375,8 +377,9 @@ main{
     height:calc(100vw /6);
     border: 1.5vw solid rgba(255, 255, 255, 0);
   }
-  .square:hover{
-    border: 1.5vw solid rgba(255, 255, 255, 0.377)
+  .square:active{
+    border: 1.5vw solid rgba(255, 255, 255, 0.377);
+    display:block
   }
   .big-square {
     width:100%;
