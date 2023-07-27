@@ -173,9 +173,14 @@ main{
 }
 /* containers 75% */
 #info-costi .container,
-.partner
-{
+.partner,
+#altre-info,
+.sottotitolo,
+.portare .container,
+.domande .container{
+  margin: 0 auto;
   width: 75%;
+  max-width: 1000px;
 }
 .divider{
   border-bottom: 1px solid #d0d0d3;
@@ -191,6 +196,7 @@ main{
     margin: 0px auto 70px;
     padding-top: 50px;
     width: 90%;
+    max-width: 1200px;
   }
   .bg-jumbo .container .informacion{
     padding-top: 50px;
@@ -334,10 +340,6 @@ main{
     border: 1px solid black;
   }
   /* altre info */
-  #altre-info{
-    margin: 0 auto;
-    width: 75%;
-  }
   .second-card{
     width: calc( 100% / 3 );
     margin: 30px 0px 10px;
@@ -358,7 +360,6 @@ main{
   /* sottotitolo */
   .sottotitolo{
     margin: 70px auto;
-    width: 75%;
   }
   .sottotitolo h2{
     margin-bottom: 15px;
@@ -405,14 +406,11 @@ main{
   background-color:  #B4D0E7;
 }
 .portare .container{
-  width: 75%;
-  margin: 0 auto;
   height:calc(100vw /6);
   background-color: #B4D0E7;
 }
 /* domande */
 .domande .container{
-  width: 75%;
   margin: 50px auto;
   scroll-behavior: smooth;
 }
